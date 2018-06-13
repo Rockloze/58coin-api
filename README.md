@@ -69,6 +69,31 @@ The signature is the hex digest of an HMAC-SHA256 hash where the message is your
 ### Accounts
 
 ----
+#### Get Product Lis
+> POST product/list
+
+
+**Market product Parameters**
+
+| Name | Type | Required | Description |
+|:- |:- |:- |:- |
+| name | string | no | How much you want to buy or sell |
+
+**Response**
+```node
+{
+  "result": {
+    "name": "BTC/USDT",
+    "baseCurrencyName": "BTC",
+    "quoteCurrencyName": "USDT",
+    "baseMinSize": "0.001",
+    "baseIncrement": "0.001",
+    "quoteIncrement": "0.0.01"
+  }
+}
+```
+
+----
 #### View accounts
 Get a list of your spot trading accounts.
 > GET spot/my/accounts
