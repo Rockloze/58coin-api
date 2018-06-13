@@ -69,6 +69,38 @@ The signature is the hex digest of an HMAC-SHA256 hash where the message is your
 ### Accounts
 
 ----
+#### View product
+Get a list of your spot trading accounts.
+> GET /product/list
+
+**Parameters**
+None
+
+**Response**
+```node
+{
+  "result": [
+    {
+      "currency": "BTC",
+      "balance": "0.00000000",
+      "available": "0.00000000",
+    },
+    {
+      "currency": "LTC",
+      "balance": "0.00000000",
+      "available": "0.00000000",
+    },
+    {
+      "currency": "ETH",
+      "balance": "0.00000000",
+      "available": "0.00000000",
+    },
+    ...
+  ]
+}
+```
+<br/><br/><br/><br/><br/><br/>
+----
 #### View accounts
 Get a list of your spot trading accounts.
 > GET spot/my/accounts
@@ -102,7 +134,6 @@ None
 }
 ```
 <br/><br/><br/><br/><br/><br/>
-
 ----
 ### Orders
 
